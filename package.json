@@ -1,0 +1,12 @@
+{
+  "name": "Green",
+  "description": "Wordpress Theme Green",
+  "author": "Joern Esdohr",
+  "devDependencies": {
+		"grunt":					"~0.4.1",
+		"grunt-contrib-watch":      "*",
+		"grunt-contrib-coffee":		"*",
+		"grunt-contrib-less":		"*",
+		"matchdep":					"*"
+    }
+}
