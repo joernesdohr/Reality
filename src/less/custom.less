@@ -1,10 +1,116 @@
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
+
+
+body {
+    background-color: #f0f0f0;
+}
+
+
+
+/* LANDING-PAGE
+*/
+
+#landing-page-jumbotron {
+    height: 600px;
+    background: url(/build/images/landing-page/jumbotron-1920.jpg) center center no-repeat;
+    background-color: #333;
+    color: #fff;
+
+    #featured-overlay {
+        background: rgba(0,0,0,0.5);
+    }
+}
+
+
+
+
+
 #landing-page {
+
     & > .row {
         margin-bottom: 30px;
     }
 
-    .content-box {
-        background: #eee;
-        height: 300px;
+    .content-container {
+        background: #fff;
+        min-height: 50px;
+    }
+
+    #visitor-signup-box {
+        padding: 0 30px 30px;
+        color: #fff;
+        background: url(/build/images/feather.png) 20px 20px no-repeat #94b949;
+        
+        h1 {
+            font-weight: 300;
+            margin-left: 40px;
+        }
+    }
+}
+
+
+/* PROGRAM
+*/
+
+.talk-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    .talk {
+
+        a {
+            display: block;
+            padding: 20px;
+            background-color: #fff;
+
+            .scheduled-time, .info {
+                float: left;
+            }
+
+            .scheduled-time {
+                margin-right: 20px;
+            }
+
+            .talk-title, .scheduled-time {
+                color: #000;
+            }
+
+            .presenter-name, .company-name {
+                font-size: .8em;
+                color: #aaa;
+            }
+
+            &:hover, &:active {
+                background-color: @brand-primary;
+                text-decoration: none;
+                color: #fff;
+
+                .talk-title, .scheduled-time {
+                    color: #fff;
+                }
+
+                .presenter-name, .company-name {
+                    color: rgba(255,255,255,0.6);
+                }
+            }
+        }
+
+        &.odd {
+            a {
+                background-color: #f0f0f0;
+
+                &:hover, &:active {
+                    background-color: @brand-primary;
+                }
+            }
+        }
+
+        p {
+            margin: 0;
+        }
     }
 }

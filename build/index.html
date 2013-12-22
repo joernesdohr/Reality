@@ -5,13 +5,13 @@
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse" role="navigation">
         <div class="container">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Start</a></li>
+                <li class="active"><a href="index.html">Start</a></li>
                 <li><a href="#news">Neuigkeiten</a></li>
                 <li><a href="#info">Info</a></li>
-                <li><a href="#program">Programm</a></li>
+                <li><a href="program.html">Programm</a></li>
                 <li><a href="#team">Unser Team</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -30,40 +30,52 @@
         </div>
     </nav>
 
-    <div class="jumbotron">
+    <div id="landing-page-jumbotron" class="jumbotron">
         <div class="container">
-            <h1>Reality</h1>
-            <p>Jobmesse</p>
-            <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+            <div class="row">
+                <div id="featured-overlay" class="col-md-5">
+                    <h1>Reality</h1>
+                    <p>Jobmesse</p>
+                    <p><a class="btn btn-primary btn-lg" role="button">Learn more</a></p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="landing-page" class="container">
+    <div id="landing-page" class="container page-container">
         <div class="row">
             <div class="col-md-4">
-                <div class="content-box"></div>
+                <div class="container">
+                    <h1>Erlebe Realität.</h1>
+                    <p>Roin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="content-box"></div>
+                <div id="visitor-signup-box" class="container content-container">
+                    <h1>Als Besucher anmelden</h1>
+                    <p>Melde dich als Besucher an und hol' dir dein eigenes Namensschild.</p>
+                    <p>Alles kostenlos.</p>
+                    <button type="button" class="btn btn-info">jetzt anmelden</button>
+                </div>
             </div>
             <div class="col-md-4">
-                <div class="content-box"></div>
+                <div class="container content-container"></div>
             </div>
         </div>
 
         <div class="row">
             <div class="col-md-6">
-                <div class="content-box"></div>
+                <div class="container content-container"></div>
             </div>
             <div class="col-md-6">
-                <div class="content-box"></div>
+                <div class="container content-container"></div>
             </div>
         </div>
 
 
         <div class="row">
             <div class="col-md-12">
-                <div class="content-box"></div>
+                <div class="container content-container"></div>
             </div>
         </div>
     </div>
