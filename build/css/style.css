@@ -1869,8 +1869,8 @@ fieldset[disabled] .btn-default.active {
 }
 .btn-primary {
   color: #ffffff;
-  background-color: #84b819;
-  border-color: #74a216;
+  background-color: #428bca;
+  border-color: #357ebd;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -1878,8 +1878,8 @@ fieldset[disabled] .btn-default.active {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
   color: #ffffff;
-  background-color: #6a9414;
-  border-color: #4d6c0f;
+  background-color: #3276b1;
+  border-color: #285e8e;
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -1901,8 +1901,8 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-  background-color: #84b819;
-  border-color: #74a216;
+  background-color: #428bca;
+  border-color: #357ebd;
 }
 .btn-warning {
   color: #ffffff;
@@ -5858,11 +5858,22 @@ body {
 */
 #landing-page-jumbotron {
   height: 600px;
+  padding: 0;
   background: url(/build/images/landing-page/jumbotron-1920.jpg) center center no-repeat;
   background-color: #333;
   color: #fff;
 }
+#landing-page-jumbotron > div {
+  height: 100%;
+}
+#landing-page-jumbotron > div > div {
+  height: 100%;
+}
 #landing-page-jumbotron #featured-overlay {
+  height: 100%;
+  padding-top: .5em;
+  padding-left: 2em;
+  padding-right: 2em;
   background: rgba(0, 0, 0, 0.5);
 }
 #landing-page > .row {
@@ -5888,52 +5899,73 @@ body {
   margin: 0;
   padding: 0;
 }
-.talk-list .talk a {
+.talk a {
   display: block;
-  padding: 20px;
+  padding: 5%;
   background-color: #fff;
 }
-.talk-list .talk a .scheduled-time,
-.talk-list .talk a .info {
+.talk a .scheduled-time,
+.talk a .info {
   float: left;
 }
-.talk-list .talk a .scheduled-time {
-  margin-right: 20px;
+.talk a .scheduled-time {
+  margin-right: 5%;
+  width: 10%;
 }
-.talk-list .talk a .talk-title,
-.talk-list .talk a .scheduled-time {
+.talk a .info {
+  width: 85%;
+}
+.talk a .talk-title,
+.talk a .scheduled-time {
   color: #000;
 }
-.talk-list .talk a .presenter-name,
-.talk-list .talk a .company-name {
+.talk a .presenter-name,
+.talk a .company-name {
   font-size: .8em;
   color: #aaa;
 }
-.talk-list .talk a:hover,
-.talk-list .talk a:active {
+.talk a:hover,
+.talk a:active {
   background-color: #84b819;
   text-decoration: none;
   color: #fff;
 }
-.talk-list .talk a:hover .talk-title,
-.talk-list .talk a:active .talk-title,
-.talk-list .talk a:hover .scheduled-time,
-.talk-list .talk a:active .scheduled-time {
+.talk a:hover .talk-title,
+.talk a:active .talk-title,
+.talk a:hover .scheduled-time,
+.talk a:active .scheduled-time {
   color: #fff;
 }
-.talk-list .talk a:hover .presenter-name,
-.talk-list .talk a:active .presenter-name,
-.talk-list .talk a:hover .company-name,
-.talk-list .talk a:active .company-name {
+.talk a:hover .presenter-name,
+.talk a:active .presenter-name,
+.talk a:hover .company-name,
+.talk a:active .company-name {
   color: rgba(255, 255, 255, 0.6);
 }
-.talk-list .talk.odd a {
+.talk.odd a {
   background-color: #f0f0f0;
 }
-.talk-list .talk.odd a:hover,
-.talk-list .talk.odd a:active {
+.talk.odd a:hover,
+.talk.odd a:active {
   background-color: #84b819;
 }
-.talk-list .talk p {
+.talk p {
   margin: 0;
+}
+/* Team
+*/
+#team-member-list {
+  padding: 0;
+  list-style-type: none;
+}
+#team-member-list .member {
+  margin-bottom: 30px;
+}
+#team-member-list .member img {
+  background-color: #ccc;
+}
+#team-member-list .member h2 {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 4em;
 }

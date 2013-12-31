@@ -15,11 +15,24 @@ body {
 
 #landing-page-jumbotron {
     height: 600px;
+    padding: 0;
     background: url(/build/images/landing-page/jumbotron-1920.jpg) center center no-repeat;
     background-color: #333;
     color: #fff;
 
+    &>div {
+        height: 100%;
+        
+        &>div {
+            height: 100%;
+        }
+    }
+
     #featured-overlay {
+        height: 100%;
+        padding-top: .5em;
+        padding-left: 2em;
+        padding-right: 2em;
         background: rgba(0,0,0,0.5);
     }
 }
@@ -60,57 +73,85 @@ body {
     margin: 0;
     padding: 0;
 
-    .talk {
+}
 
-        a {
-            display: block;
-            padding: 20px;
-            background-color: #fff;
+.talk {
 
-            .scheduled-time, .info {
-                float: left;
-            }
+    a {
+        display: block;
+        padding: 5%;
+        background-color: #fff;
 
-            .scheduled-time {
-                margin-right: 20px;
-            }
+        .scheduled-time, .info {
+            float: left;
+        }
+
+        .scheduled-time {
+            margin-right: 5%;
+            width: 10%;
+        }
+
+        .info {
+            width: 85%;
+        }
+
+        .talk-title, .scheduled-time {
+            color: #000;
+        }
+
+        .presenter-name, .company-name {
+            font-size: .8em;
+            color: #aaa;
+        }
+
+        &:hover, &:active {
+            background-color: @brand-primary;
+            text-decoration: none;
+            color: #fff;
 
             .talk-title, .scheduled-time {
-                color: #000;
+                color: #fff;
             }
 
             .presenter-name, .company-name {
-                font-size: .8em;
-                color: #aaa;
+                color: rgba(255,255,255,0.6);
             }
+        }
+    }
+
+    &.odd {
+        a {
+            background-color: #f0f0f0;
 
             &:hover, &:active {
                 background-color: @brand-primary;
-                text-decoration: none;
-                color: #fff;
-
-                .talk-title, .scheduled-time {
-                    color: #fff;
-                }
-
-                .presenter-name, .company-name {
-                    color: rgba(255,255,255,0.6);
-                }
             }
         }
+    }
 
-        &.odd {
-            a {
-                background-color: #f0f0f0;
+    p {
+        margin: 0;
+    }
+}
 
-                &:hover, &:active {
-                    background-color: @brand-primary;
-                }
-            }
+
+/* Team
+*/
+#team-member-list {
+    padding: 0;
+    list-style-type: none;
+
+    .member {
+        margin-bottom: 30px;
+
+        img {
+            background-color: #ccc;
         }
 
-        p {
-            margin: 0;
+        h2 {
+            font-style: italic;
+            font-weight: 300;
+            font-size: 4em;
         }
     }
 }
